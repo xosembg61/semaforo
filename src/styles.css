@@ -1,0 +1,57 @@
+body {
+  background-color: #eef2f6;
+}
+
+.tarjeta {
+  max-width: 620px;
+  border-color: #d8e1ea;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgb(34 51 68 / 7%);
+}
+
+.soporte,
+.lectura {
+  background-color: #f3f5f8;
+}
+
+.semaforo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  padding: 13px;
+  border: 3px solid #303b48;
+  border-radius: 20px;
+  background-color: #1c242e;
+}
+
+.luz {
+  width: 52px;
+  height: 52px;
+  border: 3px solid #151b22;
+  border-radius: 50%;
+  background-color: #3e4854;
+}
+
+.rojo.encendida {
+  background-color: #ff5252;
+}
+
+.ambar.encendida {
+  background-color: #ffbf3f;
+}
+
+.verde.encendida {
+  background-color: #35d17c;
+}
+
+.averiado .ambar.encendida {
+  animation: parpadear 1s step-end infinite;
+}
+
+@keyframes parpadear {
+  50% {
+    background-color: #3e4854;
+  }
+}
+
